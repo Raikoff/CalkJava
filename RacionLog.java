@@ -1,35 +1,36 @@
 
-
 /*
- * Логика просчета  чисел
+ * Логика просчета  рациональных чисел
  */
 
-public class Logic {
+public class RacionLog {
 
-   
-    public static void logic(double x, double y, String b) {
+    public static void logic(double x, double y, String q) {
 
-        
         double resul;
-        switch (b) {
+        switch (q) {
             case "+":
                 resul = x + y;
-                System.out.println(resul);
+                System.out.printf("%.2f", resul);
+
                 break;
 
             case "*":
                 resul = x * y;
-                System.out.println(resul);
+                System.out.printf("%.2f", resul);
+
                 break;
 
             case "-":
                 resul = x - y;
-                System.out.println(resul);
+                System.out.printf("%.2f", resul);
+
                 break;
 
             case "/":
                 resul = x / y;
-                System.out.println(resul);
+                System.out.printf("%.2f", resul);
+
                 break;
 
             default:
@@ -38,4 +39,7 @@ public class Logic {
         }
 
     }
+
+
+    
 }
